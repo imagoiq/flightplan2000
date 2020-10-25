@@ -2,6 +2,8 @@
 
 A simple web application example where you can draw and save a flightplan for your drone.
 
+Demo: [https://imagoiq.github.io/flightplan2000](https://imagoiq.github.io/flightplan2000)
+
 ## Installation
 
 ```bash
