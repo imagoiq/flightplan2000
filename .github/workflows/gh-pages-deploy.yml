@@ -12,6 +12,11 @@
           with:
             persist-credentials: false
 
+        - name: Define Secrets ❗
+          uses: secrethub/actions/env-export@v0.2.0
+          env:
+            VUE_APP_MAPBOX_TOKEN: ${{ secrets.VUE_APP_MAPBOX_TOKEN }}
+
         - name: Install and Build 🔧
           run: |
             npm ci
