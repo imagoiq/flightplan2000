@@ -1,0 +1,5 @@
+/* To allow focus styling only when using keyboard for certains elements (like button). Keep focus style for input when using mouse. source: https://css-tricks.com/keyboard-only-focus-styles/ */
+
+.js-focus-visible :focus:not(.focus-visible), .js-focus-visible :focus:not([data-focus-visible-added]) {
+  @apply outline-none;
+}

@@ -1,0 +1,52 @@
+/* Source: https://akryum.github.io/v-tooltip/#/ */
+/* purgecss start ignore */
+.tooltip {
+  display: block !important;
+  z-index: 10000;
+
+  & .tooltip-inner {
+    background: theme('colors.indigo.800');
+    color: white;
+    border-radius: 16px;
+    padding: 5px 10px 6px;
+  }
+
+  &[x-placement^="top"] {
+    margin-bottom: 5px;
+  }
+
+  &[x-placement^="bottom"] {
+    margin-top: 5px;
+  }
+
+  &[x-placement^="right"] {
+    margin-left: 5px;
+  }
+
+  &[x-placement^="left"] {
+    margin-right: 5px;
+  }
+
+  &.popover {
+    & .popover-inner {
+      background: theme('colors.gray.500');
+      color: theme('colors.indigo.800');
+      padding: 24px;
+      border-radius: 5px;
+      box-shadow: 0 5px 30px rgba(theme('colors.indigo.800'), .1);
+    }
+  }
+
+  &[aria-hidden='true'] {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .15s, visibility .15s;
+  }
+
+  &[aria-hidden='false'] {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .15s;
+  }
+}
+/* purgecss end ignore */

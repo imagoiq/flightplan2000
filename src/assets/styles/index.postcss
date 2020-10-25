@@ -1,0 +1,46 @@
+/**
+* This injects Tailwind's base styles and any base styles registered by
+* plugins.
+*/
+@import '~tailwindcss/base.css';
+
+/**
+* This injects Tailwind's component classes and any component classes
+* registered by plugins.
+*/
+@import '~tailwindcss/components.css';
+
+/*
+   Custom global CSS
+   - Follow ITCSS Structure
+*/
+
+/* 01. Settings */
+
+/* 02. Tools */
+
+/* 03. Generic */
+
+@import '03-generic/generic.focusVisible.postcss';
+@import '03-generic/generic.selection.postcss';
+
+/* 04. Elements */
+
+@import '04-elements/elements.all.postcss';
+@import '04-elements/elements.html.postcss';
+@import '04-elements/elements.body.postcss';
+
+/* 05. Objects */
+
+/* 06. Components */
+
+@import '06-components/components.tooltip.postcss';
+
+/* 99. Utilities */
+
+
+/**
+* This injects Tailwind's utility classes and any utility classes registered
+* by plugins.
+*/
+@import '~tailwindcss/utilities.css';
