@@ -11,7 +11,7 @@ npm install -g @vue/cli
 npm install
 ```
 
-Rename the `.env.sample` with the ending fill it.
+Rename the `.env.sample` by removing the ending and fill it with your own token.
 
 ### Build for development
 
